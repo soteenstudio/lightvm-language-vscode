@@ -1,0 +1,13 @@
+{
+  "scopeName": "source.lightvm",
+  "patterns": [
+    {
+      "name": "keyword.control.lightvm",
+      "match": "\\b(val|push|set|get|dup|swap)\\b"
+    },
+    {
+      "name": "constant.numeric.lightvm",
+      "match": "\\b0x[0-9a-fA-F]+\\b"
+    }
+  ]
+}
