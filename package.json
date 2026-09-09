@@ -1,21 +1,21 @@
 {
   "name": "lightvm-language",
   "displayName": "LightVM Language",
-  "description": "Highlighter for LightVM bytecode",
-  "version": "0.0.1",
+  "description": "VS Code language support for LightVM bytecode.",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.136.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages", "Visualization"
   ],
-  "activationEvents": ["onLanguage:lightvm", "onCommand:lightvm.showInstructionPointers"],
+  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [{
       "id": "lightvm",
       "aliases": ["LightVM", "lvm"],
-      "extensions": [".lvm", ".lightvm"],
+      "extensions": [".lightvm", ".lightvmb", ".lvm", ".lvmb"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
