@@ -1,13 +1,13 @@
 {
   "name": "lightvm-language",
   "displayName": "LightVM Language",
-  "description": "Highlighter for LightVM bytecode",
-  "version": "0.0.1",
+  "description": "VS Code language support for LightVM bytecode.",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.136.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages", "Visualization"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
@@ -15,13 +15,21 @@
     "languages": [{
       "id": "lightvm",
       "aliases": ["LightVM", "lvm"],
-      "extensions": [".lvm", ".lightvm"]
+      "extensions": [".lightvm", ".lightvmb", ".lvm", ".lvmb"],
+      "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "lightvm",
       "scopeName": "source.lightvm",
       "path": "./syntaxes/highlight.tmLightVM.json"
-    }]
+    }],
+    "commands": [{ "command": "lightvm.showInstructionPointers", "title": "LightVM: Toggle Instruction Pointers" }],
+    "configurationDefaults": {
+      "[lightvm]": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
