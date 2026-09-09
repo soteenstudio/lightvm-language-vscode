@@ -9,7 +9,7 @@ VS Code language support for LightVM v0.1.0-alpha.9 bytecode.
 - Bracket matching, automatic closing, indentation, folding regions, and bracket pair colorization.
 - Optional instruction-pointer inlay hints after each opcode.
 
-Files ending in `.lvm` and `.lightvm` are recognized automatically.
+Files ending in `.lightvm`, `lightvmb`, `.lvm` and `.lvmb` are recognized automatically.
 
 ## Commands
 
