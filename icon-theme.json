@@ -1,0 +1,11 @@
+{
+  "iconDefinitions": {
+    "lightvm-file-icon": {
+      "iconPath": "./icon.png"
+    }
+  },
+  "fileExtensions": {
+    "lvm": "lightvm-file-icon",
+    "lightvm": "lightvm-file-icon"
+  }
+}

@@ -23,13 +23,13 @@
       "scopeName": "source.lightvm",
       "path": "./syntaxes/highlight.tmLightVM.json"
     }],
-    "commands": [{ "command": "lightvm.showInstructionPointers", "title": "LightVM: Toggle Instruction Pointers" }],
-    "configurationDefaults": {
-      "[lightvm]": {
-        "editor.bracketPairColorization.enabled": true,
-        "editor.guides.bracketPairs": true
+    "iconThemes": [
+      {
+        "id": "lightvm-icons",
+        "label": "LightVM Icons",
+        "path": "./lightvm-icon-theme.json"
       }
-    }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
