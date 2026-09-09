@@ -3,7 +3,7 @@
   "patterns": [
     {
       "name": "keyword.control.lightvm",
-      "match": "\\b(val|push|set|get|dup|swap)\\b"
+      "match": "\\b(val|push|set|get|dup|swap|add)\\b"
     },
     {
       "name": "constant.numeric.lightvm",
