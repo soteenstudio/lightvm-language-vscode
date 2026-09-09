@@ -1,6 +1,6 @@
 # LightVM Language
 
-[VS Code](https://github.com/microsoft/vscode) language support for LightVM [v0.1.0-alpha.9](https://github.com/soteenstudio/lightvm/tree/v0.1.0-alpha.9 bytecode.
+[VS Code](https://github.com/microsoft/vscode) language support for LightVM [v0.1.0-alpha.9](https://github.com/soteenstudio/lightvm/tree/v0.1.0-alpha.9) bytecode.
 
 ## Features
 
