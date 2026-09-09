@@ -9,19 +9,27 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onLanguage:lightvm", "onCommand:lightvm.showInstructionPointers"],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [{
       "id": "lightvm",
       "aliases": ["LightVM", "lvm"],
-      "extensions": [".lvm", ".lightvm"]
+      "extensions": [".lvm", ".lightvm"],
+      "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "lightvm",
       "scopeName": "source.lightvm",
       "path": "./syntaxes/highlight.tmLightVM.json"
-    }]
+    }],
+    "commands": [{ "command": "lightvm.showInstructionPointers", "title": "LightVM: Toggle Instruction Pointers" }],
+    "configurationDefaults": {
+      "[lightvm]": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
